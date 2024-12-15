@@ -1,0 +1,195 @@
+/* Common styles */
+.main-heading {
+  color: #f44336;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0; /* Adjust spacing around the heading */
+  font-family: 'Arial', sans-serif; /* Ensure a clean, stylish look */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    color: #333;
+    margin: 20px 0;
+  }
+
+  .cinema-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+  
+  .screen {
+    background-color: #444;
+    height: 40px;
+    width: 100%;
+    margin: 50px 0px 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px 30px 0 0;
+    font-size: 18px;
+  }
+  
+  .seats-section {
+    display: flex;
+    justify-content: center; /* Align seats horizontally */
+    align-items: center; /* Align seats vertically */
+    gap: 20px; /* Gap between left and right seats */
+}
+
+/* Regular seat grid */
+.seats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Spacing between seats */
+}
+
+
+  .aisle {
+    width: 50px;
+    background-color: transparent;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid #444;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .seat.available:hover {
+    background-color: #6c6c6c;
+  }
+  
+  .seat.available {
+    background-color: #444;
+  }
+  
+  .seat.selected {
+    background-color: #00bcd4; /* Cyan for selected seats */
+  }
+  
+  .seat.booked {
+    background-color: #f44336; /* Red for booked seats */
+    cursor: not-allowed;
+  }
+  
+  .seat.elite {
+  border-color: #00bcd4; /* Cyan border for elite seats */
+}
+  
+  /* Elite section separator */
+  .elite-separator {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 40px 0;
+  }
+  
+  .elite-label {
+    color: #00bcd4;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .floor-label {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Summary and buttons */
+  .info, .summary {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .info .seat {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border: 1px solid #444;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+  .info .seat.selected {
+  background-color: #00bcd4; /* Cyan for selected */
+}
+
+  .info p {
+    display: flex;
+    align-items: center;
+    font-weight: bold; /* Make text bold */
+    color: #00bcd4; /* Text in cyan for contrast */
+}
+
+
+.info .seat.booked {
+  background-color: #f44336; /* Red for booked */
+}
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0097a7;
+    transform: scale(1.1); /* Increase size slightly on hover */
+  }
+  
+  #final-summary {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #elite-seats {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Same number of columns as regular seats */
+    grid-template-rows: repeat(4, auto); 
+    gap: 10px; /* Minimal spacing between seats */
+    margin-top: 20px;
+  }
+  
+#selected-seats,
+#total-amount {
+  font-size: 24px; /* Increased font size */
+  font-weight: bold;
+  color: #f44336;
+  margin: 10px 0; /* Added some margin for spacing */
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book My Seat</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/ticket.png">
+</head>
+<body>
+  <h1 class="main-heading">Faiz's Spot Reserves</h1>
+  <h1>Book My Seat</h1>
+  <div class="cinema-container">
+    <div class="screen">SCREEN</div>
+    <div class="seats-section">
+      <div id="seats-left" class="seats-grid"></div>
+      <div class="aisle"></div>
+      <div id="seats-right" class="seats-grid"></div>
+    </div>
+    <div class="elite-separator">
+      <span class="elite-label">Elite Section (Rs. 250 per seat)</span>
+    </div>
+    <div id="elite-seats" class="elite-seats-grid"></div>
+  </div>
+  <div class="info">
+    <p><span class="seat available"></span> Available</p>
+    <p><span class="seat selected"></span> Selected</p>
+    <p><span class="seat booked"></span> Booked</p>
+  </div>
+  <div class="summary">
+    <p id="selected-seats">Selected Seats: None</p>
+    <p id="total-amount">Total Amount: Rs. 0</p>
+    <button id="book-seats">Book Seats</button>
+  </div>
+  <div id="final-summary"></div>
+  <script src="script.js"></script>
+</body>
+</html>
